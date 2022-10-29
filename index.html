@@ -1,42 +1,60 @@
-
-    
 <!doctype html>
 <html lang="en">
-  <head>
+  <head> 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>오픈소프트웨어실습 프로필</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <nav class="navbar navbar-light bg-light">
-        <div class="container">
-        <span class="navbar-brand mb-0 h1"><i class="bi bi-card-checklist"></i> SKKU-Todo</span>
-        </div>
-        </nav>
-        <div class="container">
-            <div class="d-flex align-items-center mb-2 mt-2">
-            <input type="text" class="form-control" id="task-input" placeholder="Enter a task here">
-            <button type="button" id="add" class="btn btn-primary ms-1 text-nowrap"><i class="bi bi-plus"></i>
-            Add</button>
-            </div>
-            <div class="d-flex">
-            <div class="flex-grow-1 bg-light rounded-2 p-2 me-1 w-50">
-            <h3>Todos</h3>
-            <div id="todo-list">
-            <div class="task bg-light p-1 rounded-2 ps-2">Sample task</div>
-            </div>
-            </div>
-            <div class="flex-grow-1 bg-light rounded-2 p-2 w-50">
-            <h3>Done</h3>
-            <div id="done-list">
-            </div>
-      
-            </div>
-            </div>
-            </div>
-            
-    <h1>Hello, world!</h1>
+  <div class="title">
+    <nav class="nav justify-content-center bg-light">
+      <div class="container">
+      <span class="navbar-brand mb-0 h1"><div class="p-3 mb-2 bg-dark text-white">My profile</div></span>
+      </div>
+      </nav>
+    </div>
+    <div class="container">    
+      <img src="img1.png" width="250">
+      <p>Name: 박병규</p>
+      <p>Affiliation: <a href="https://www.skku.edu/">성균관대학교</a></p>
+      <p>Instagram: <a href="https://www.instagram.com/pbk__98/">pbk__98</a></p>
+      <p>MBTI: <a href="https://namu.wiki/w/ISTP">ISTP</a></p>
+      <p>Email: pbk95120@g.skku.edu</p>
+      <p id="interest" class="text-primary">Interest</p>
+      <ul>
+        <li>운동</li>
+        <li>패션</li>
+        <li>음악</li>
+        <li>보드게임</li>
+      </ul>
+    <div class="music">
+      <div class="opacity-75"><p>Listening to lately</p></div>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-music-player" viewBox="0 0 16 16">
+        <path d="M4 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V3zm1 0v3h6V3H5zm3 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+        <path d="M11 11a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm-3 2a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
+        <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H4z"/>
+      </svg>   
+        <table>
+        <tr>        
+          <th>힙합</th>
+          <th>인디</th>
+          <th>밴드</th>
+        </tr>
+        <tr>
+          <td><a href="https://www.youtube.com/watch?v=nrDF8PcEx6E"><button type="button" class="btn btn-primary">1</button></a></td>
+          <td><a href="https://www.youtube.com/watch?v=vl3x_eCuA1c"><button type="button" class="btn btn-primary">2</button></a></td>
+          <td><a href="https://www.youtube.com/watch?v=wjNln9mXuTI"><button type="button" class="btn btn-primary">3</button></a></td>
+        </tr>
+        <tr>
+          <td><a href="https://www.youtube.com/watch?v=RB1ZaqRi444"><button type="button" class="btn btn-primary">4</button></a></td>
+          <td><a href="https://www.youtube.com/watch?v=7RrtKtp8VrU"><button type="button" class="btn btn-primary">5</button></a></td>
+          <td><a href="https://www.youtube.com/watch?v=vzWds5gWS6c&t=4s"><button type="button" class="btn btn-primary">6</button></a></td>
+        </tr>
+      </table> 
+    </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-  </body>
+</body>
 </html>
